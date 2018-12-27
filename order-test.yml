@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/cloud?characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defalutZone: http://localhost:8761/eureka/
+  instance:
+    hostname: 127.0.0.1
+PRODUCT:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
