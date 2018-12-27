@@ -1,4 +1,4 @@
-env: test23
+env: test
 server:
   port: 8081
 spring:
