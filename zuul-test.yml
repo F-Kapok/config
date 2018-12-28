@@ -4,3 +4,11 @@ server:
 spring:
   application:
     name: zuul
+zuul:
+  routes:
+    myZuul:
+      service-id: product
+      path: /kapok-p/**
+      sensitiveHeaders: 
+  ignored-patterns:
+    - /**/product/listForOrder.do
