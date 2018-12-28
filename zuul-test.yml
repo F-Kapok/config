@@ -8,7 +8,7 @@ zuul:
   routes:
     myZuul:
       service-id: product
-      path: /kapok-p/**
-      #sensitiveHeaders: 
+      path: /kapok-a/**
+      sensitiveHeaders: 
   ignored-patterns:
     - /**/product/listForOrder.do
