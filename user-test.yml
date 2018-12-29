@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://120.0.0.1:3306/cloud?serverTimezone=GMT&useSSL=false&characterEncoding=UTF-8
+    url: jdbc:mysql://139.199.153.106:3306/cloud?serverTimezone=GMT&useSSL=false&characterEncoding=UTF-8
     username: root
     password: root
   redis:
