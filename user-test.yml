@@ -8,7 +8,7 @@ spring:
     username: root
     password: root
   redis:
-    host: 127.0.0.1
+    host: 139.199.153.106
     port: 6379
     password:
 mybatis:
