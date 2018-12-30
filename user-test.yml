@@ -7,10 +7,6 @@ spring:
     url: jdbc:mysql://139.199.153.106:3306/cloud?serverTimezone=GMT&useSSL=false&characterEncoding=UTF-8
     username: root
     password: root
-  redis:
-    host: 139.199.153.106
-    port: 6379
-    password:
 mybatis:
   type-aliases-package: com.fans.dataobject
   mapper-locations: classpath:mappers/*.xml
