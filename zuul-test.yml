@@ -1,9 +1,6 @@
 env: test
 server:
   port: 8083
-spring:
-  application:
-    name: zuul
 zuul:
   routes:
     myZuul:
@@ -12,3 +9,8 @@ zuul:
       sensitiveHeaders: 
   ignored-patterns:
     - /**/product/listForOrder.do
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
