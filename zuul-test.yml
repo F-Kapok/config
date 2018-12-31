@@ -1,4 +1,4 @@
-env: test1
+env: test
 server:
   port: 8083
 zuul:
