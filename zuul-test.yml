@@ -2,6 +2,9 @@ env: test
 server:
   port: 8083
 zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
   #忽略头部敏感共享如cookie
   sensitive-headers: 
   routes:
