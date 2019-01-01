@@ -13,11 +13,9 @@ zuul:
       path: /kapok-p/**
   ignored-patterns:
     - /**/product/listForOrder.do
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
 hystrix:
   command:
     default:
@@ -25,3 +23,8 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
